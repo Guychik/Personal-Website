@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "slug": "about",
+      "title": "About",
+      "date": "2026-06-10",
+      "summary": "A bit about me and this little stand on the internet."
+    }
+  ],
+  "folders": []
+}

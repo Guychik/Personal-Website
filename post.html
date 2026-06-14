@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guy Gilad</title>
+  <title>Post</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Markdown renderer (no install needed; loaded from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="script.js" defer></script>
   <script src="blog.js" defer></script>
 </head>
@@ -13,12 +15,13 @@
     <!-- Sidebar loads dynamically -->
     <div id="sidebar-container"></div>
 
-    <!-- Page content: list of posts, newest first -->
+    <!-- Page content -->
     <main class="content">
-      <h2>Posts</h2>
-      <div id="post-list">
-        <p>Loading posts…</p>
-      </div>
+      <p class="post-folder" id="post-folder"></p>
+      <time class="post-date" id="post-meta-date"></time>
+      <article id="post-content">
+        <p>Loading…</p>
+      </article>
     </main>
   </div>
 </body>
