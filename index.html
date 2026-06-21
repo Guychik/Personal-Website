@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guy Gilad</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Markdown renderer for the home intro (home.md) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="script.js" defer></script>
   <script src="blog.js" defer></script>
 </head>
@@ -15,6 +17,7 @@
 
     <!-- Page content: list of posts, newest first -->
     <main class="content">
+      <div class="home-intro" id="home-intro"></div>
       <h2>Posts</h2>
       <div id="post-list">
         <p>Loading posts…</p>

@@ -113,7 +113,7 @@ async function renderPost() {
     const manifest = await loadManifest();
     const meta = allPosts(manifest).find((p) => p.slug === slug);
 
-    const res = await fetch(postFilePath(slug));
+    const res = await fetch(postFilePath(slug), { cache: "no-store" });
     if (!res.ok) throw new Error(`Post not found: ${slug}`);
     const markdown = await res.text();
 
@@ -135,7 +135,26 @@ async function renderPost() {
   }
 }
 
+// --- Home intro (index.html): a short description from home.md ----------
+async function renderHomeIntro() {
+  const el = document.getElementById("home-intro");
+  if (!el) return;
+  try {
+    const res = await fetch("home.md", { cache: "no-store" });
+    const md = res.ok ? await res.text() : "";
+    if (!md.trim()) {
+      el.remove(); // nothing to show
+      return;
+    }
+    el.innerHTML = marked.parse(md);
+  } catch (err) {
+    console.error("Failed to load home intro:", err);
+    el.remove();
+  }
+}
+
 window.addEventListener("DOMContentLoaded", () => {
+  renderHomeIntro();
   renderListing();
   renderPost();
 });
