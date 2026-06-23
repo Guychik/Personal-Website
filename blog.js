@@ -1,6 +1,7 @@
-// Shared blog logic for the home post list (index.html) and single-post page (post.html).
-// No build step: posts are markdown files in posts/, organized in posts/posts.json,
-// and rendered in the browser with marked.js.
+// Blog logic for the single-shell site (index.html). The DOMContentLoaded
+// router reads the URL path: "/" shows the home post list, "/<slug>" renders
+// that post. No build step: posts are markdown files in posts/, organized in
+// posts/posts.json, and rendered in the browser with marked.js.
 //
 // posts.json shape:
 //   {
@@ -69,6 +70,18 @@ function postFilePath(slug) {
   return "posts/" + segments.map(encodeURIComponent).join("/") + ".md";
 }
 
+// Slug -> clean URL, e.g. "ideas/my-note" -> "/ideas/my-note".
+function postUrl(slug) {
+  return "/" + slug.split("/").filter(Boolean).map(encodeURIComponent).join("/");
+}
+
+// Current URL path -> slug, e.g. "/ideas/my-note" -> "ideas/my-note".
+// Returns null at the site root (the home page).
+function slugFromPath() {
+  const path = decodeURIComponent(window.location.pathname).replace(/^\/+|\/+$/g, "");
+  return path || null;
+}
+
 // --- Home page (index.html): a flat list of every post, newest first ----
 // Folder navigation lives in the sidebar; this is just the blog landing.
 async function renderListing() {
@@ -86,7 +99,7 @@ async function renderListing() {
       .map(
         (p) => `
       <article class="post-summary">
-        <h3><a href="post.html?post=${encodeURIComponent(p.slug)}">${p.title}</a></h3>
+        <h3><a href="${postUrl(p.slug)}">${p.title}</a></h3>
         <time class="post-date">${formatDate(p.date)}</time>
         <p>${p.summary || ""}</p>
       </article>`
@@ -98,30 +111,36 @@ async function renderListing() {
   }
 }
 
-// --- Single post page (post.html?post=slug) -----------------------------
-async function renderPost() {
+// --- Single post page (/slug) -------------------------------------------
+async function renderPost(slug) {
   const container = document.getElementById("post-content");
   if (!container) return;
-
-  const slug = new URLSearchParams(window.location.search).get("post");
-  if (!slug) {
-    container.innerHTML = "<p>No post specified. <a href='index.html'>Back home</a>.</p>";
-    return;
-  }
 
   try {
     const manifest = await loadManifest();
     const meta = allPosts(manifest).find((p) => p.slug === slug);
 
+    // The manifest is the source of truth. An unknown slug is a 404 — bail
+    // before fetching, because the SPA fallback returns index.html (200) for
+    // any missing file, which would otherwise render as garbage markdown.
+    if (!meta) {
+      document.title = "Not found";
+      container.innerHTML = "<p>Post not found. <a href='/'>Back home</a>.</p>";
+      return;
+    }
+
     const res = await fetch(postFilePath(slug), { cache: "no-store" });
     if (!res.ok) throw new Error(`Post not found: ${slug}`);
     const markdown = await res.text();
-
-    if (meta) {
-      document.title = meta.title;
-      const dateEl = document.getElementById("post-meta-date");
-      if (dateEl) dateEl.textContent = formatDate(meta.date);
+    // Same guard for the markdown file itself: if it's missing, the fallback
+    // hands back the index.html shell rather than a 404.
+    if (markdown.trimStart().startsWith("<!DOCTYPE")) {
+      throw new Error(`Markdown missing for ${slug}`);
     }
+
+    document.title = meta.title;
+    const dateEl = document.getElementById("post-meta-date");
+    if (dateEl) dateEl.textContent = formatDate(meta.date);
 
     // If the post lives in a folder, show that folder path above it.
     const folderEl = document.getElementById("post-folder");
@@ -131,7 +150,7 @@ async function renderPost() {
     container.innerHTML = marked.parse(markdown);
   } catch (err) {
     console.error("Failed to load post:", err);
-    container.innerHTML = "<p>Couldn't load this post. <a href='index.html'>Back home</a>.</p>";
+    container.innerHTML = "<p>Couldn't load this post. <a href='/'>Back home</a>.</p>";
   }
 }
 
@@ -153,8 +172,20 @@ async function renderHomeIntro() {
   }
 }
 
+// Route on the URL path: "/" is the home page, anything else is a post.
 window.addEventListener("DOMContentLoaded", () => {
-  renderHomeIntro();
-  renderListing();
-  renderPost();
+  const slug = slugFromPath();
+  const homeView = document.getElementById("home-view");
+  const postView = document.getElementById("post-view");
+
+  if (slug) {
+    if (homeView) homeView.hidden = true;
+    if (postView) postView.hidden = false;
+    renderPost(slug);
+  } else {
+    if (postView) postView.hidden = true;
+    if (homeView) homeView.hidden = false;
+    renderHomeIntro();
+    renderListing();
+  }
 });

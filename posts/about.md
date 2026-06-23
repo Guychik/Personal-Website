@@ -1,16 +1,14 @@
 # About
 
-Hey there!
+Hey there!\
 This is my tiny stand, somewhere on the internet.
 
-I feel like in today's world, we're exposed to so much information, which our head struggles to retain. I'm passionate about a new thing and move to a new one before I make sense of the first. If I only had a place to archive it for good.
-
-That's me
+And that's me
 
 <img src="imgs/profile.jpeg" alt="My profile photo" width="240" height="240" style="border-radius: 50%;">
 
-I hope to contribute to a world where people care about things. Where they're interested in the mechanisms around them, created either intentionally or not. Where curiosity and exitment drives mastering different skills. Where beauty, aesthetics, art have significance. Where people look to make sense of this world. Where people care about each other.
-I care, and try doing my best at it. 
+I hope to contribute to a world where people care about things. Where they're interested in the mechanisms around them, created either intentionally or not. Where curiosity and exitment drives us to master different skills. Where beauty, aesthetics, art have significance. Where people look to make sense of this world. Where people care about each other.\
+I care
 
 You can also find me over there:
 

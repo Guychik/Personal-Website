@@ -6,7 +6,11 @@
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": ".",
+    // Clean URLs: serve index.html (the app shell) for any path that isn't a
+    // real file, e.g. /about or /ideas/my-note. blog.js then reads the path
+    // and renders the matching post. Real assets (.md, .css, imgs) still win.
+    "not_found_handling": "single-page-application"
   },
   "compatibility_flags": [
     "nodejs_compat"

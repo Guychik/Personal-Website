@@ -39,7 +39,7 @@ async function buildNav() {
 
   nav.innerHTML = `
     <ul class="nav-tree">
-      <li><a href="post.html?post=about">About</a></li>
+      <li><a href="/about">About</a></li>
       ${navLevel(topPosts, manifest.folders)}
     </ul>`;
 
@@ -75,9 +75,14 @@ function navLevel(posts, folders) {
   return entries.map((e) => e.html).join("");
 }
 
+// Slug -> clean URL, e.g. "ideas/my-note" -> "/ideas/my-note" (mirrors postUrl in blog.js).
+function navUrl(slug) {
+  return "/" + slug.split("/").filter(Boolean).map(encodeURIComponent).join("/");
+}
+
 // A leaf link to a single post.
 function postLi(p) {
-  return `<li><a href="post.html?post=${encodeURIComponent(p.slug)}">${p.title}</a></li>`;
+  return `<li><a href="${navUrl(p.slug)}">${p.title}</a></li>`;
 }
 
 // A folder, expandable, with its children (sub-folders + posts) sorted too.
