@@ -34,6 +34,18 @@ body {
   margin-bottom: 1.5rem;
 }
 
+/* The hamburger toggle is desktop-hidden; the mobile breakpoint reveals it. */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  color: #111;
+}
+
 /* Navigation tree — the only nav pane, under the "Guy Gilad" headline */
 .nav-tree,
 .nav-tree ul {
@@ -68,9 +80,17 @@ body {
   display: none;
 }
 
-.nav-tree li.is-expandable:hover > ul,
+/* Click-pinned folders open everywhere. */
 .nav-tree li.is-expandable.open > ul {
   display: block;
+}
+
+/* Hover-to-peek is desktop-only: on touch, :hover sticks after a tap and would
+   stop a second tap from collapsing the folder. */
+@media (hover: hover) {
+  .nav-tree li.is-expandable:hover > ul {
+    display: block;
+  }
 }
 
 /* Chevron marking a folder (two strokes, drawn with borders) */
@@ -87,9 +107,14 @@ body {
   transition: transform 0.15s ease;
 }
 
-.nav-tree li.is-expandable:hover > .nav-folder .folder-arrow,
 .nav-tree li.is-expandable.open > .nav-folder .folder-arrow {
   transform: rotate(45deg); /* points down while open */
+}
+
+@media (hover: hover) {
+  .nav-tree li.is-expandable:hover > .nav-folder .folder-arrow {
+    transform: rotate(45deg); /* points down on hover (desktop peek) */
+  }
 }
 
 /* Content */
@@ -143,6 +168,30 @@ h1 a:focus {
 
 .home-intro p {
   margin: 0 0 0.5rem;
+}
+
+/* Home intro links: green underline that fills upward into a highlight on hover */
+.home-intro a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 2px;
+  border-bottom: 2px solid #2e7d32;
+  background-image: linear-gradient(#2e7d32, #2e7d32);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 0;
+  transition: background-size 0.25s ease, color 0.25s ease;
+}
+
+/* Only run the fill-up hover effect on devices with a real pointer. On touch
+   screens :hover sticks after a tap, leaving the link stuck in the filled
+   (white-on-green) state — so there it just keeps the static green underline. */
+@media (hover: hover) {
+  .home-intro a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-size: 100% 100%;
+  }
 }
 
 /* Blog landing — flat list of posts */
@@ -205,4 +254,63 @@ h1 a:focus {
 #post-content code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.9em;
+}
+
+/* --- Phones / narrow screens -------------------------------------------
+   Stack the sidebar on top of the content instead of beside it, and move
+   the divider from the right edge to the bottom. Tighten spacing and the
+   large headings so posts are comfortable to read on a small screen. */
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr; /* single column */
+    grid-template-rows: auto;   /* don't force the sidebar to full height */
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 2px solid #ddd; /* divider under the nav now */
+    padding: 1.25rem;
+  }
+
+  /* Compact top bar: site name on the left, hamburger on the right. */
+  .sidebar-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar h1 {
+    margin-bottom: 0; /* keep the collapsed bar tight */
+  }
+
+  .nav-toggle {
+    display: inline-block; /* reveal the hamburger */
+  }
+
+  /* Nav starts collapsed so the post content sits right at the top; the
+     hamburger toggles .nav-open to reveal it. */
+  #site-nav {
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .sidebar.nav-open #site-nav {
+    display: block;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+
+  .content h2 {
+    font-size: 1.6rem;
+  }
+
+  .post-summary h3 {
+    font-size: 1.25rem;
+  }
+
+  #post-content h1 {
+    font-size: 1.6rem;
+  }
 }

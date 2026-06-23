@@ -1,9 +1,7 @@
 # About
 
 Hey there!\
-This is my tiny stand, somewhere on the internet.
-
-And that's me
+That's me:
 
 <img src="imgs/profile.jpeg" alt="My profile photo" width="240" height="240" style="border-radius: 50%;">
 

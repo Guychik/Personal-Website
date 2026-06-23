@@ -13,9 +13,23 @@ async function loadSidebar() {
     const res = await fetch("sidebar.html", { cache: "no-store" });
     container.innerHTML = await res.text();
     await buildNav();
+    wireNavToggle();
   } catch (err) {
     console.error("Failed to load sidebar:", err);
   }
+}
+
+// Hamburger toggle (mobile only — the button is hidden on desktop via CSS).
+// Tapping a nav link triggers a full page load, so the menu starts collapsed
+// again on the next page; no need to close it manually.
+function wireNavToggle() {
+  const btn = document.getElementById("nav-toggle");
+  const sidebar = document.querySelector(".sidebar");
+  if (!btn || !sidebar) return;
+  btn.addEventListener("click", () => {
+    const open = sidebar.classList.toggle("nav-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
 }
 
 async function buildNav() {

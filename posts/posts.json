@@ -4,7 +4,13 @@
       "slug": "about",
       "title": "About",
       "date": "2026-06-10",
-      "summary": "A bit about me and this little stand on the internet."
+      "summary": "whoami"
+    },
+    {
+      "slug": "now",
+      "title": "Now",
+      "date": "2026-06-23",
+      "summary": "What I'm doing"
     }
   ],
   "folders": []

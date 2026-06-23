@@ -1,1 +1,3 @@
-A tiny stand, somewhere on the internet — where I archive the things I'm curious about.
+A tiny stand, somewhere on the internet.
+
+Go to [about](/about) for who I am, or see what I'm focused on [now](/now).
