@@ -1,0 +1,15 @@
+# Files in the project root that must NOT be served as public assets.
+# (assets.directory is ".", so without this the whole repo would be public.)
+# Uses .gitignore-style syntax.
+.git
+.github
+.wrangler
+.claude
+node_modules
+.DS_Store
+.gitignore
+.assetsignore
+wrangler.jsonc
+README.md
+.dev.vars*
+.env*
