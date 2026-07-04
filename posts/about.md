@@ -1,7 +1,8 @@
 # About
 
-Hey there!\
-That's me:
+I'm Guy, 25 year old living in Tel Aviv. Working as a Security Researcher at Upwind Security.\
+Also pationate about movies, music, design, philosophy, history and sports. 
+
 
 <img src="imgs/profile.jpeg" alt="My profile photo" width="240" height="240" style="border-radius: 50%;">
 
