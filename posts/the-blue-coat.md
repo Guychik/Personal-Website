@@ -8,7 +8,7 @@ The orange one was the one I used on the trip and the blue one stayed inside. On
 
 Actually I got some pretty good comments on it (and it's not like I get too many comments on my clothes). Indeed a nice coat. But a thing that returned over and over was a comment about the big unignorable patch on its front, that said "Todd". The first time I smiled. The second time I said it's my nickname. On the third I was like: "who is Todd?" It's a real person isn't it?
 
-If he's real, how to find him? Maybe it's a story to tell.
+If he's real, how to find him? I might just accept this quest.
 
 Here it is:
 
@@ -80,7 +80,7 @@ At the same time, I think about this reunion between me and a stranger who makes
 
 When it'll start raining again and I'll look at my coat section, this story will come back. Maybe I'll have the urge to look for him again. Crawl the internet for redemption. In some ways I like it open ended. But I can also imagine him the way I want. Or just create him.
 
-<div class="prompt">I want to create the possible image a person named "Todd D'ambrosio", who lives in the state of New York, works in "Byrne Dairy" and owns the picture of the coat I attached</div>
+<div class="prompt">I want to create the possible image of a person named "Todd D'ambrosio", who lives in the state of New York, works in "Byrne Dairy" and owns the picture of the coat I attached</div>
 
 ![AI-generated image of a man in the blue coat with a Todd patch, next to a Byrne Dairy truck](imgs/blue-coat/ai-todd.jpg)
 
