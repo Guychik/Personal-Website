@@ -264,22 +264,31 @@ h1 a:focus {
   margin-top: 0;
 }
 
-/* A prompt typed to an AI, set apart from the story's own text. */
+/* A prompt typed to an AI, drawn like a chat input with a send button. */
 #post-content .prompt {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
   margin: 16px 0 10px;
-  padding: 12px 16px 14px;
-  background: #f5f5f4;
-  border: 1px solid #e0e0de;
-  border-radius: 10px;
+  padding: 12px 12px 12px 16px;
+  background: #fff;
+  border: 1px solid #d0d0ce;
+  border-radius: 16px;
 }
 
-#post-content .prompt::before {
-  content: "Prompt";
-  display: block;
-  margin-bottom: 4px;
-  font-size: 0.75rem;
+#post-content .prompt::after {
+  content: "↑";
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
   font-weight: 700;
-  color: #777;
 }
 
 #post-content blockquote {
