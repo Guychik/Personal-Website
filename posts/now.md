@@ -3,9 +3,9 @@
 What I'm focused on right now.
 
 - Position myself as a leading researcher in my workplace 
-- Build my brand - speak publicly, publish content
 - Position myself at the frontier of the AI revolution 
+- Find ways to channel creative thinking into real creations
 
-_Last updated: 2026-07-04_
+_Last updated: 2026-11-06_
 
 

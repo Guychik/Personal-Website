@@ -14,4 +14,4 @@ You can also find me over there:
 - LinkedIn: [linkedin.com/in/guy-gilad](https://www.linkedin.com/in/guy-gilad-8169ba19b)
 - X: [@guyg1244](https://x.com/guyg1244)
 - GitHub: [Guychik](https://github.com/Guychik)
-- Spotify: [guygilad](https://open.spotify.com/user/guygilad) (I like creating playlists)
+- Spotify: [guygilad](https://open.spotify.com/user/guygilad)

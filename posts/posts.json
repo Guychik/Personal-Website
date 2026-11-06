@@ -9,8 +9,14 @@
     {
       "slug": "now",
       "title": "Now",
-      "date": "2026-07-04",
+      "date": "2026-11-06",
       "summary": "What I'm doing"
+    },
+    {
+      "slug": "the-blue-coat",
+      "title": "The Blue Coat",
+      "date": "2026-11-06",
+      "summary": "Who is Todd?"
     }
   ],
   "folders": []
