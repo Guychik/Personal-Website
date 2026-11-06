@@ -63,7 +63,7 @@ Then there are these "find a person online" services, which surprisingly there a
 
 ![RocketReach result](imgs/blue-coat/dambrosio-1.jpg)
 
-Later came this one, which might be the one?
+Later came this, which might be the one?
 
 ![LeadIQ result](imgs/blue-coat/dambrosio-2.jpg)
 
