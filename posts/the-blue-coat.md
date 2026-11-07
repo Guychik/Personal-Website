@@ -29,11 +29,11 @@ Then I found an important detail, a label with the man's full name: "Todd Dambro
 
 ![Label with Todd Dambrosio's name](imgs/blue-coat/label.jpg)
 
-Ok so it's company swag, and this "Aramark" is a known manufacturer of it.
+Ok so it's company swag, and this "Aramark" is a known manufacturer of such.
 
 ## How do you find a person?
 
-I'm definitely not a surveillance or an OSINT expert, though back in the day we used to play a game where you point at a stranger and compete to find him online. Feeling pretty capable, I remember being at a basketball game, finding one of the cheerleaders in just a couple of minutes.
+I'm definitely not a surveillance or an OSINT expert, though back in the day we used to play a game where you point at a stranger and compete to find him online. Feeling pretty capable, I remember being at a basketball game and finding one of the cheerleaders in just a couple of minutes.
 
 ## From Byrne Dairy to Todd
 
