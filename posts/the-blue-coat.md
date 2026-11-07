@@ -1,12 +1,12 @@
 # The Blue Coat
 
-Bringing it back to February 2025, I traveled through Japan for almost a month with a very good friend. Not my first time there (went for a karate trip to watch the world tournament, a different story). This one was different and I was 10 years older and it was great.
+Bringing it back to February 2025, when I traveled through Japan for almost a month with a very good friend. Not my first time there (went for a karate trip to watch the world championship, that's a different story).
 
-On our first few days, it was about rediscovering Tokyo. On Harajuku day, saw a bunch of vintage stores and of course I wanted something myself. One place, I can still remember, was below ground, and had a massive indoor and outdoor selection. It was freezing outside (Japan in the winter can be pretty cold and don't be surprised to find yourself sick for a week in a hostel in Kyoto), so the coat selection was legitimate. Two ones caught my attention. One khaki/orange and another blue. Didn't know which to buy so decided to get both (definitely had a hard time fitting it in the suitcase each time).
+On our first few days, it was about rediscovering Tokyo. On Harajuku day, saw a bunch of vintage stores. One place, I can still remember, was below ground, and had a massive indoor and outdoor selection. It was freezing outside (Japan in the winter can be pretty cold and don't be surprised to find yourself sick for a week, stuck in a hostel in Kyoto), so the coat selection was legitimate. Two ones caught my attention. One khaki/orange and another blue. Didn't know which one to buy so decided to get both (definitely had a hard time fitting it in the suitcase each time).
 
 The orange one was the one I used on the trip and the blue one stayed inside. Only when I came back home and the weather was right, I decided "it's time".
 
-Actually I got some pretty good comments on it (and it's not like I get too many comments on my clothes). Indeed a nice coat. But a thing that returned over and over was a comment about the big unignorable patch on its front, that said "Todd". The first time I smiled. The second time I said it's my nickname. On the third I was like: "who is Todd?" It's a real person isn't it?
+I got some pretty good comments on it (and it's not like I get too many comments on my clothes). Indeed a nice coat. But a thing that returned over and over was a comment about the big unignorable patch on its front, that said "Todd". The first time I smiled. The second time I said it's my nickname. On the third I was like: "who is Todd?" It's a real person isn't it?
 
 If he's real, how to find him? I might just accept this quest.
 
@@ -15,7 +15,7 @@ Here it is:
 ![The blue coat with the Todd patch](imgs/blue-coat/coat.jpg)
 
 You can see "Todd" on the left, but what's on the right?\
-Byrne Hollow Farm
+"Byrne Hollow Farm"
 
 ![Byrne Hollow Farm patch](imgs/blue-coat/patch.jpg)
 
@@ -27,7 +27,7 @@ Well hello there
 
 Based in New York, narrowed it down to about 125 employees.
 
-Then I found an important detail, a label with the man's full name: Todd Dambrosio
+Then I found an important detail, a label with the man's full name: "Todd Dambrosio"
 
 ![Label with Todd Dambrosio's name](imgs/blue-coat/label.jpg)
 
