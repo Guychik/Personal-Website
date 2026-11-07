@@ -10,7 +10,7 @@ I got some pretty good comments on it (and it's not like I get too many comments
 
 If he's real, how to find him? I might just accept this quest.
 
-Here it is:
+The coat:
 
 ![The blue coat with the Todd patch](imgs/blue-coat/coat.jpg)
 
@@ -35,7 +35,7 @@ Ok so it's company swag, and this "Aramark" is a known option.
 
 ## How do you find a person?
 
-I'm definitely not a surveillance or OSINT expert. Though back in the day we used to play a game when you point at a stranger (with a reference, let's say a cheerleader in a basketball game) and compete to find her online.
+I'm definitely not a surveillance or OSINT expert. Though back in the day we used to play a game when you point at a stranger (let's say a cheerleader in a basketball game) and compete to find her online.
 
 ## From Byrne Dairy to Todd
 
@@ -47,19 +47,19 @@ I thought "ok let's just use Claude to crawl this site and look for Todd" - whic
 
 ![WordPress blocking the crawl](imgs/blue-coat/wordpress-blocked.jpg)
 
-Then I just looked at Byrne's employee list everywhere on the internet.\
+Then I just searched for any sign of Byrne's employee list, everywhere on the internet.\
 Facebook almost made my day and became useful for other reasons than the marketplace.
 
 ![Facebook search](imgs/blue-coat/facebook.jpg)
 
 ## Or is it D'ambrosio?
 
-So the name is Italian, and the way they do it is with an apostrophe - D'ambrosio (as in "from the family of Ambrosio" or "son of Ambrosio").\
-Pivoting with the updated name, was looking on social networks and this person popped at the top, so I decided to try and contact him. Wrote this (in my opinion) very cute message, but unfortunately didn't get a reply.
+So the name is Italian, and the way they do it is with an apostrophe - D'ambrosio (as in "from the family of Ambrosio").\
+Pivoting with the updated name, I was looking on social networks and this person showed up at the top, so decided to try and contact him. Wrote this (in my opinion) very cute message, but unfortunately didn't get a reply.
 
 ![Message sent on Instagram](imgs/blue-coat/dambrosio-3.jpg)
 
-Then there are these "find a person online" services, which surprisingly there are tons of. They actually gave leads. First this one, but soon understood this Todd is a Pathologist and also the same person as the one on Instagram…
+There are these "find a person online" services, which surprisingly there are tons of, and actually got some leads. First this one, but soon understood this Todd is rather a Speech-Language Pathologist and also the same person as the one on Instagram…
 
 ![RocketReach result](imgs/blue-coat/dambrosio-1.jpg)
 
@@ -67,18 +67,18 @@ Later came this, which might be the one?
 
 ![LeadIQ result](imgs/blue-coat/dambrosio-2.jpg)
 
-Of course the details themselves are behind a paywall and that's where I called enough.
+Of course the details themselves are behind a paywall, and that's where I've called enough.
 
-I'm sure there are plenty more ways to do it (for all the stalkers out there).
+I'm sure there was a lot more I could have done and there are plenty more ways (for all the stalkers out there).
 
 ## Closing thoughts
 
-When thinking about it, the idea of modern intelligence can be unsettling. Once a nation backed operation or a movie like subject, is now just a fun exercise. Fun but also destructive. In the back of our heads (or maybe only in mine), we know that in our age, privacy may just be an illusion. Our presence is so much more than physical and our identity is scattered all over the internet. A single person has by himself (or now with the assistance of agents) the power way beyond one has ever had.\
+Although empty handed, I think about this reunion between me and a stranger who makes milk for a living. Or maybe it's the reunion of the stranger who makes milk for a living and his coat?
+
+At the same time, the idea of modern intelligence can be unsettling. Once a nation backed operation or a movie like subject, is now a fun exercise. Fun but also destructive. In the back of our heads (or maybe only in mine), we know that in our age, privacy may just be an illusion. Our presence is much more than physical and our identity is scattered all over the internet. A single person has by himself (or now with the assistance of agents) the power way beyond one has ever had.\
 As someone who works in Cyber Security for a living, I tend to under think about these concerns in my personal life. Not because I dismiss what can happen, but because I want to protect myself from the unbearable life of constant anxiety.
 
-At the same time, I think about this reunion between me and a stranger who makes milk for a living. Or maybe it's the reunion of the stranger who makes milk for a living and his coat?
-
-When it'll start raining again and I'll look at my coat section, this story will come back. Maybe I'll have the urge to look for him again. Crawl the internet for redemption. In some ways I like it open ended. But I can also imagine him the way I want. Or just create him.
+When it'll start raining again and I'll look at my coat section, this will come back. Maybe I'll have the urge to look for him again. Crawl the internet for redemption. In some ways I like it open ended. But I can also imagine him the way I want to, or just create him.
 
 <div class="prompt">I want to create the possible image of a person named "Todd D'ambrosio", who lives in the state of New York, works in "Byrne Dairy" and owns the picture of the coat I attached</div>
 
