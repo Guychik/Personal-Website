@@ -6,8 +6,7 @@ Also pationate about movies, music, design, philosophy, history and sports.
 
 <img src="imgs/profile.jpeg" alt="My profile photo" width="240" height="240" style="border-radius: 50%;">
 
-I hope to contribute to a world where people care about things. Where they're interested in the mechanisms around them, created either intentionally or not. Where curiosity and exitment drives us to master different skills. Where beauty, aesthetics, art have significance. Where people look to make sense of this world. Where people care about each other.\
-I care
+I hope to contribute to a world where people care about things. Where they're interested in the mechanisms around them, created either intentionally or not. Where curiosity and exitment drives us to master different skills. Where beauty, aesthetics, art have significance. Where people look to make sense of this world. Where people care about each other. I care.
 
 You can also find me on:
 
