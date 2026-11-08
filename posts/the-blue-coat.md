@@ -75,7 +75,7 @@ I'm sure there was a lot more I could have done and that I've only scratched the
 Although empty handed, I think about this reunion between me and a stranger who makes milk for a living. Or maybe it's the reunion of the stranger who makes milk for a living and his coat?
 
 Thinking about it all, the idea of modern intelligence can be unsettling. Once a nation backed operation or a movie like subject, is now a fun exercise. Fun but also destructive. In the back of our minds, we know that in our age, privacy may just be an illusion. Our presence is much more than physical and our identity is scattered all over the internet. A single person has by himself (especially now with the assistance of AI agents) the power way beyond one has ever had.\
-As someone who works in Cyber Security for a living, I tend to under think about these concerns in my personal life. Not because I dismiss what can happen, but because I want to protect myself from the unbearable life of constant anxiety.
+As someone who works in Cyber Security for a living, I tend to underthink about these concerns in my personal life. Not because I dismiss what can happen, but because I want to protect myself from the unbearable life of constant anxiety.
 
 When it starts raining again and I look at my coat section, maybe I'll have the urge to search for Todd again. Crawl the internet for redemption. In some ways I like it open ended. But I can also imagine him the way I want to, or just create him:
 
